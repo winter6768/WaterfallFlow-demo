@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "TagSelectView.h"
 
 @interface ViewController ()
 
@@ -16,14 +17,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    NSArray *arrTag = @[@"标签",@"标签",@"标签标签",@"标签标签标签",@"标签",@"标签标签标签",@"标签",@"标签标签",@"标签标签标签",@"标签",@"标签标签标签",@"标签",@"标签标签",@"标签标签标签",@"标签",@"标签标签标签",@"标签",@"标签标签",@"标签标签标签",@"标签",@"标签标签标签"];
+    NSArray *arrselect = @[@"标签"];
+    
+    TagSelectView *tagView = [[TagSelectView alloc]initWithFrame:CGRectMake(0, 64, self.view.frame.size.width, self.view.frame.size.height - 64)];
+    [tagView setAllTagArray:arrTag selectTagArray:arrselect canSelect:YES];
+    [self.view addSubview:tagView];
 }
-
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-
 @end

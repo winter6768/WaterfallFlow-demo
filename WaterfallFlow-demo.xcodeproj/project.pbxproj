@@ -15,6 +15,9 @@
 		C88357FA1E0E57BD00797CF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C88357F81E0E57BD00797CF6 /* LaunchScreen.storyboard */; };
 		C88358051E0E57BD00797CF6 /* WaterfallFlow_demoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C88358041E0E57BD00797CF6 /* WaterfallFlow_demoTests.m */; };
 		C88358101E0E57BD00797CF6 /* WaterfallFlow_demoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C883580F1E0E57BD00797CF6 /* WaterfallFlow_demoUITests.m */; };
+		C8FFE3471E11280600950070 /* TagSelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = C8FFE3461E11280600950070 /* TagSelectView.m */; };
+		C8FFE34D1E11294800950070 /* TagSelectModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C8FFE34C1E11294800950070 /* TagSelectModel.m */; };
+		C8FFE3531E1148F800950070 /* TagWaterfallLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = C8FFE3521E1148F800950070 /* TagWaterfallLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,12 @@
 		C883580B1E0E57BD00797CF6 /* WaterfallFlow-demoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "WaterfallFlow-demoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C883580F1E0E57BD00797CF6 /* WaterfallFlow_demoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WaterfallFlow_demoUITests.m; sourceTree = "<group>"; };
 		C88358111E0E57BD00797CF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C8FFE3451E11280600950070 /* TagSelectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TagSelectView.h; path = "WaterfallFlow-demo/TagSelectView/TagSelectView.h"; sourceTree = SOURCE_ROOT; };
+		C8FFE3461E11280600950070 /* TagSelectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TagSelectView.m; path = "WaterfallFlow-demo/TagSelectView/TagSelectView.m"; sourceTree = SOURCE_ROOT; };
+		C8FFE34B1E11294800950070 /* TagSelectModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TagSelectModel.h; path = "WaterfallFlow-demo/TagSelectView/TagSelectModel.h"; sourceTree = SOURCE_ROOT; };
+		C8FFE34C1E11294800950070 /* TagSelectModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TagSelectModel.m; path = "WaterfallFlow-demo/TagSelectView/TagSelectModel.m"; sourceTree = SOURCE_ROOT; };
+		C8FFE3511E1148F800950070 /* TagWaterfallLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TagWaterfallLayout.h; sourceTree = "<group>"; };
+		C8FFE3521E1148F800950070 /* TagWaterfallLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TagWaterfallLayout.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +110,7 @@
 		C88357E91E0E57BC00797CF6 /* WaterfallFlow-demo */ = {
 			isa = PBXGroup;
 			children = (
+				C8FFE3411E1127C500950070 /* TagSelectView */,
 				C88357ED1E0E57BC00797CF6 /* AppDelegate.h */,
 				C88357EE1E0E57BC00797CF6 /* AppDelegate.m */,
 				C88357F01E0E57BC00797CF6 /* ViewController.h */,
@@ -138,6 +148,20 @@
 				C88358111E0E57BD00797CF6 /* Info.plist */,
 			);
 			path = "WaterfallFlow-demoUITests";
+			sourceTree = "<group>";
+		};
+		C8FFE3411E1127C500950070 /* TagSelectView */ = {
+			isa = PBXGroup;
+			children = (
+				C8FFE3451E11280600950070 /* TagSelectView.h */,
+				C8FFE3461E11280600950070 /* TagSelectView.m */,
+				C8FFE3511E1148F800950070 /* TagWaterfallLayout.h */,
+				C8FFE3521E1148F800950070 /* TagWaterfallLayout.m */,
+				C8FFE34B1E11294800950070 /* TagSelectModel.h */,
+				C8FFE34C1E11294800950070 /* TagSelectModel.m */,
+			);
+			name = TagSelectView;
+			path = tagSelectView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,7 +226,7 @@
 		C88357DF1E0E57BC00797CF6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = winter;
 				TargetAttributes = {
 					C88357E61E0E57BC00797CF6 = {
@@ -274,8 +298,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				C88357F21E0E57BC00797CF6 /* ViewController.m in Sources */,
+				C8FFE34D1E11294800950070 /* TagSelectModel.m in Sources */,
 				C88357EF1E0E57BC00797CF6 /* AppDelegate.m in Sources */,
+				C8FFE3471E11280600950070 /* TagSelectView.m in Sources */,
 				C88357EC1E0E57BC00797CF6 /* main.m in Sources */,
+				C8FFE3531E1148F800950070 /* TagWaterfallLayout.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,6 +375,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -395,6 +423,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -505,6 +534,7 @@
 				C88358161E0E57BD00797CF6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C88358171E0E57BD00797CF6 /* Build configuration list for PBXNativeTarget "WaterfallFlow-demoTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +543,7 @@
 				C88358191E0E57BD00797CF6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C883581A1E0E57BD00797CF6 /* Build configuration list for PBXNativeTarget "WaterfallFlow-demoUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +552,7 @@
 				C883581C1E0E57BD00797CF6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
